@@ -11,9 +11,9 @@ function writePoem(response) {
 function myPoem(event) {
   event.preventDefault();
 
-  let newTopicElement = document.querySelector("#new-instruction");
+  let newTopicInput = document.querySelector("#new-instruction");
   let apiKey = "53f4f49c434fot046a20cc0f96d8ebba";
-  let prompt = `User instructions: Generate a poem about ${newTopicElement.value}`;
+  let prompt = `User instructions: Generate a poem about ${newTopicInput.value}`;
   let context =
     "You are a popular poet and you write sweet short poems. Using basic HTML and following the user instructions, generate a four line poem, seperate them with <br />. At the bottom of the poem, sign 'yoruichi-senpai' in <strong> <i>.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
