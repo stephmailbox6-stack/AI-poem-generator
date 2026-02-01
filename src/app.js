@@ -20,7 +20,7 @@ function myPoem(event) {
 
   let myPoemElement = document.querySelector("#poem");
   myPoemElement.classList.remove("hidden");
-  myPoemElement.innerHTML = `Please wait while we generate your ${newTopicInput.value} poem<span class="rotate">⏳<span/>`;
+  myPoemElement.innerHTML = `Please wait while we generate your ${newTopicInput.value} poem <span class="rotate">⏳<span/>`;
 
   console.log("generating poem, please wait...");
   console.log(`prompt = ${prompt}`);
